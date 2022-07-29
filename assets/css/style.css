@@ -1,0 +1,517 @@
+:root {
+  --main-color: #20b2aa;
+  --main-color-hover: #22c4bb;
+  --main-text-color: #626262;
+  --main-color-title: rgb(43, 42, 42);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ----- # Start Title # ----- */
+.main-heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 70px;
+  color: var(--main-color-title);
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.main-heading::before {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  width: 50px;
+  height: 3px;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 10%;
+  display: none;
+  z-index: 1;
+}
+#btn-back-to-top:hover {
+  background-color: var(--main-color-hover);
+}
+/* ----- # End Title # ----- */
+
+/* ----- # Start TopBar ----- # */
+.navbar {
+  background: var(--main-color);
+}
+/* ----- # End TopBar ----- # */
+
+/* ----- # Start NavBar ----- # */
+.header {
+  box-shadow: 0 0 8px #ddd;
+}
+.navbar .navbar-brand {
+  color: var(--main-color);
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Brush Script MT";
+}
+.navbar .navbar-nav {
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--main-color);
+}
+.navbar .navbar-nav .media {
+  margin-right: 10px;
+}
+.navbar .navbar-nav .btn {
+  background-color: var(--main-color);
+  font-size: 14px;
+}
+.navbar .navbar-nav .btn:hover {
+  background-color: var(--main-color-hover);
+}
+.navbar .navbar-nav .btn {
+  margin-right: 10px;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .navbar .nav-link {
+    font-size: 12px;
+  }
+}
+/* ----- # End NavBar ----- # */
+
+/* ----- # Start SignUp ----- # */
+.signup {
+  margin-top: 25px;
+}
+.signup .modal-title {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+}
+.signup .modal-dialog a {
+  color: rgb(90, 85, 85);
+  text-decoration: none;
+  font-size: 15px;
+}
+.signup .modal-dialog a:hover {
+  color: red;
+}
+.signup .modal-dialog .btn {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+}
+.signup .modal-dialog .btn:hover {
+  background-color: var(--main-color-hover);
+}
+.signup .modal-body form input:focus {
+  box-shadow: 0 0 7px 0 var(--main-color);
+}
+.signup .modal-body form label {
+  color: rgb(90, 85, 85);
+  font-size: 14px;
+  font-weight: 500;
+}
+.signup .modal-dialog .tab {
+  padding: 15px;
+}
+.signup .modal-dialog .tab button {
+  width: 210px;
+  border: none;
+  background-color: #fff;
+}
+.signup .modal-dialog .tab button p {
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.signup .modal-dialog .tab .active {
+  border-bottom: 2px solid var(--main-color);
+}
+.signup .modal-dialog .tab button:focus {
+  border-bottom: 2px solid var(--main-color);
+}
+.signup .modal-body form input {
+  border: 1px solid #dadada;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 32px;
+  border-radius: 3px;
+  text-align: center;
+  outline: none;
+}
+.signup .modal-body span {
+  position: absolute;
+  right: 25px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+.signup .modal-body span .fa-eye {
+  font-size: 15px;
+  color: #9a9a9a;
+}
+.signup .modal-body form .message {
+  position: relative;
+}
+.signup .modal-body form .message.success input {
+  border-color: #09c372;
+}
+.signup .modal-body form .message.error input {
+  border-color: #ff3860;
+}
+.signup .modal-body form .message .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+.signup .modal-body form .message.error input:focus {
+  outline: none;
+  box-shadow: 0 0 10px 0 #ff3860;
+}
+/* ----- # End SignUp ----- # */
+
+/* ----- # Start Slider ----- # */
+.slider .carousel-inner > .carousel-item > img {
+  height: 95vh;
+}
+.slider .carousel-inner .overlay {
+  position: absolute;
+  background-color: rgb(0 0 0 / 0.1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.slider .text {
+  position: absolute;
+  border-top: 4px solid var(--main-color);
+  left: 10%;
+  top: 55%;
+  width: 80%;
+  background-color: rgb(255 255 255 / 87%);
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 40px;
+  text-align: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .slider .text {
+    width: 100%;
+    left: 0;
+  }
+  .slider .carousel-control-prev,
+  .slider .carousel-control-next {
+    display: none;
+  }
+}
+.slider .text h1 {
+  text-transform: uppercase;
+  color: var(--main-color-title);
+  font-size: 30px;
+}
+.slider .text p {
+  color: var(--main-text-color);
+  font-size: 15px;
+}
+.slider .carousel-control-prev,
+.slider .carousel-control-next {
+  background-color: var(--main-color);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transform: translateY(360%);
+  z-index: 2;
+}
+.slider .bi-chevron-left,
+.slider .bi-chevron-right {
+  font-size: 20px;
+}
+/* ----- # End Slider # ----- */
+
+/* ----- # Start Docter # ----- */
+.docter {
+  background-color: #eaecee;
+}
+.docter .row h2 {
+  color: var(--main-color-title);
+  font-size: 24px;
+  font-weight: 700;
+}
+.docter .row p {
+  line-height: 2;
+  font-size: 16px;
+  color: var(--main-text-color);
+}
+.docter .row i {
+  color: var(--main-color);
+  margin-right: 10px;
+}
+.docter .row img {
+  padding-top: 30px;
+}
+@media (max-width: 991px) {
+  .docter .row {
+    text-align: center;
+  }
+  .docter .row img {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+}
+/* ----- # End Docter # ----- */
+
+/* ----- # Start Dermatologie # ----- */
+.dermatologie {
+  background-color: /*#f0f8ff*/ #eaecee;
+  padding-top: 50px;
+}
+.dermatologie .row img {
+  width: 500px;
+  height: 300px;
+}
+.dermatologie .row h2 {
+  color: var(--main-color-title);
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.dermatologie .row p {
+  line-height: 2;
+  font-size: 16px;
+  color: var(--main-text-color);
+}
+.dermatologie .row i {
+  color: var(--main-color);
+  margin-right: 10px;
+}
+@media (max-width: 991px) {
+  .dermatologie {
+    padding-top: 0;
+  }
+  .dermatologie .row {
+    text-align: center;
+  }
+}
+/* ----- # End Dermatologie # ----- */
+
+/* ----- # Start Services & Media # ----- */
+.services,
+.media {
+  background-color: #f4f8fc;
+}
+.services .card img {
+  height: 12rem;
+  border-bottom: 4px solid var(--main-color-hover);
+}
+.media .card img {
+  height: 15rem;
+  border-bottom: 4px solid var(--main-color-hover);
+}
+.services .card-text,
+.media .card-text {
+  font-size: 22px;
+  color: var(--main-text-color);
+}
+.media .card {
+  cursor: pointer;
+}
+.media figcaption {
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  width: 55px;
+  height: 55px;
+  background-color: rgb(252, 42, 42);
+  border-radius: 50%;
+  cursor: pointer;
+  padding-top: 7px;
+  color: #fff;
+}
+.media figcaption i {
+  font-size: 28px;
+}
+.media figcaption:hover {
+  background-color: rgb(252, 98, 98);
+}
+.media .card:hover figcaption {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.media .modal {
+  padding-top: 140px;
+}
+/* ----- # End Services & Media # ----- */
+
+/* ----- # Start Gallery # ----- */
+.gallery {
+  background-color: #eaecee;
+}
+.gallery .imgs-container .row {
+  margin: 0;
+}
+.gallery .imgs-container .row .col-md {
+  padding: 0;
+}
+.gallery .row img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.gallery .imgs-container .box {
+  overflow: hidden;
+}
+.gallery .imgs-container .box:hover img {
+  transform: scale(1.2);
+}
+/* ----- # End Gallery # ----- */
+
+/* ----- # Start Contact # ----- */
+.contact {
+  background-color: #eaecee;
+}
+.contact .card {
+  background-color: #f3f5f7;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.contact .card i {
+  color: var(--main-color);
+  font-size: 30px;
+  border: 1px dotted var(--main-color);
+  border-radius: 50%;
+  padding: 12px;
+}
+.contact .card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+.contact .card p {
+  font-size: 15px;
+  font-weight: 450;
+  color: var(--main-text-color);
+}
+/* ----- # End Contact # ----- */
+
+/* Start Footer */
+.footer {
+  background-color: #f4f8fc;
+}
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+.footer .box h3 {
+  color: var(--main-text-color);
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+.footer .box p {
+  font-size: 15px;
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .footer .box .social {
+    justify-content: center;
+  }
+}
+.footer .box .social {
+  display: flex;
+  margin-left: -30px;
+}
+.footer .box .social li {
+  margin-right: 10px;
+  list-style: none;
+}
+.footer .box .social li a {
+  background-color: var(--main-color);
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+.footer .box .social .facebook:hover {
+  background-color: #1877f2;
+}
+.footer .box .social .instagram:hover {
+  background-color: #c13584;
+}
+.footer .box .social .youtube:hover {
+  background-color: #ff0000;
+}
+.footer .box .social .twitter:hover {
+  background-color: #1da1f2;
+}
+.footer .box .social .linkedin:hover {
+  background-color: #0077b5;
+}
+.footer .box h6 {
+  color: var(--main-text-color);
+  font-size: 18px;
+}
+.footer .box .links {
+  list-style: none;
+}
+.footer .box .links li {
+  padding: 5px 0;
+}
+.footer .box .links li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+.footer .box .links li a:hover {
+  color: var(--main-color);
+}
+.footer .box .links li a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\F101";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--main-color);
+  font-size: 10px;
+}
+.copyright {
+  background-color: #eaecee;
+  padding: 25px 0;
+  text-align: center;
+  color: var(--main-text-color);
+  font-weight: bold;
+  margin: 50px 0 0;
+  font-size: 15px;
+}
+/* End Footer */
